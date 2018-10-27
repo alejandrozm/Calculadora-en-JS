@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora | Suma | Resta | Multiplicacion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/shared/libs/index.css"/>
+    <link rel="stylesheet" href="assets/css/shared/libs/bootstrap.css">
+    <link rel="shortcut icon" href="assets/images/ico.ico" type="image/x-icon">
+
+    <!-- Compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- Minified JS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+    <script src="assets/js/index.js"></script>
+
+</head>
+<body background="assets/images/fondo.jpg" class="fondo">
+<div class="container">
+
+
+        <img src="assets/images/logo.png" alt="logo" aria-placeholder="Logo Calculadora"><br><br>
+        
+        <h1 style="color: black">Calculadora</h1><br>
+
+        <!--Suma-->
+        <h2 style="color: white">Suma</h2><br>
+
+        <div class="row">
+            <div class="col-md-3">
+                <h6 style="color: white">Numero 1:</h6>
+                <input type="text" name="" id="Numero1"><br><br>
+
+                
+            </div>
+
+            <div class="col-md-3">
+                <h6 style="color: white">Numero 2:</h6>
+                <input type="text" name="" id="Numero2"><br><br>
+            </div>
+
+            
+
+            <div class="col-md-3">
+                <h6 style="color: white">Resultado:</h6>
+                <input type="text" name="" id="Resultado"><br><br>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <button onclick="Sumar()" href="" class="btn btn-primary">Sumar</button><br><br>
+            </div>
+            <hr>
+            <div class="col-md-6">
+                <button id="Limpiar" onclick="Limpiar()" href="" class="btn btn-primary">Limpiar Campos</button><br><br>
+            </div>
+        </div><hr>
+
+
+
+    <!--Resta-->
+    <h2 style="color: white">Resta</h2><br>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h6 style="color: white">Numero 1:</h6>
+            <input type="text" name="" id="Numero1Res"><br><br>
+
+            
+        </div>
+
+        <div class="col-md-3">
+            <h6 style="color: white">Numero 2:</h6>
+            <input type="text" name="" id="Numero2Res"><br><br>
+        </div>
+
+        
+
+        <div class="col-md-3">
+            <h6 style="color: white">Resultado:</h6>
+            <input type="text" name="" id="ResultadoRes"><br><br>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <button onclick="Restar()" href="" class="btn btn-primary">Restar</button><br><br>
+        </div>
+        <hr>
+        <div class="col-md-6">
+            <button id="Limpiar" onclick="LimpiarRes()" href="" class="btn btn-primary">Limpiar Campos</button><br><br>
+        </div>
+    </div><hr>
+
+
+
+
+
+            <!--Multiplicacion-->
+        <h2 style="color: white">Multiplicacion</h2><br>
+
+        <div class="row">
+            <div class="col-md-3">
+                <h6 style="color: white">Numero 1:</h6>
+                <input type="text" name="" id="Numero1Mul"><br><br>
+
+                
+            </div>
+
+            <div class="col-md-3">
+                <h6 style="color: white">Numero 2:</h6>
+                <input type="text" name="" id="Numero2Mul"><br><br>
+            </div>
+
+            
+
+            <div class="col-md-3">
+                <h6 style="color: white">Resultado:</h6>
+                <input type="text" name="" id="ResultadoMul"><br><br>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <button onclick="Multiplicar()" href="" class="btn btn-primary">Multiplicar</button><br><br>
+            </div>
+            <hr>
+            <div class="col-md-6">
+                <button id="Limpiar" onclick="LimpiarMul()" href="" class="btn btn-primary">Limpiar Campos</button><br><br>
+            </div>
+        </div><hr><br><br><br><br><br>
+
+
+
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" id="carrusel">
+                <div class="item active">
+                    <img id="imagen1" class="text-mx" src="assets/images/Scroll1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img id="imagen2" src="assets/images/Scroll2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img id="imagen3" src="assets/images/Scroll3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img id="imagen4" src="assets/images/Scroll4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img id="imagen5" src="assets/images/Scroll5.jpg" alt="">
+                </div>
+            </div>
+        
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

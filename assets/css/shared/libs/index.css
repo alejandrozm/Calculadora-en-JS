@@ -1,0 +1,48 @@
+.fondo{
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    width: 130px;
+    height: 130px;
+    margin-left: 45%;
+    margin-top: 3%;
+    transition: 1s;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+.form{
+    border: 2px solid black;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    background-color: aqua;
+}
+
+html{
+    margin-block-end: 100px;
+}
+
+#carrusel{
+    height: 600px;
+    width: 800px;
+    text-align: center;
+}
+
+div div img{
+    height: 500px;
+    width: 500px;
+    margin-top: 200px;
+}
+
+
